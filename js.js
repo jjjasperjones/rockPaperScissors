@@ -11,7 +11,7 @@ let pcScore = 0;
 //Function rockPaperScissors
 //bassed on checking choice, computer console logs verdict.
 
-function rockPaperScissors(){
+function rockPaperScisso(){
     
     //Generate computers choice by random from array of [rock, paper, scissors] = pcChoice;
 
