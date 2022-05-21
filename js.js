@@ -1,4 +1,5 @@
-//Model 2
+/*/ Function to be executed 
+ //Model 2
 
 //Generate possible choices
 
@@ -8,28 +9,48 @@ const choiceArray = ['rock', 'paper', 'scissors'];
 let yourScore = 0;
 let pcScore = 0;
 
-//Function rockPaperScissors
-//bassed on checking choice, computer console logs verdict.
 
-function rockPaperScisso(){
-    
     //Generate computers choice by random from array of [rock, paper, scissors] = pcChoice;
+    function pcChoices(){
+    pcChoice = choiceArray[Math.floor(Math.random() * choiceArray.length)];};
+    pcChoices();
+    console.log(pcChoice); */
 
-    let pcChoice = choiceArray[Math.floor(Math.random() * choiceArray.length)];
+    function choiceSelect(e){
+        yourChoice = e.target.id;
+    }
+    document.addEventListener('click', choiceSelect);
+    //Your Choice cannot log here.
+    console.log(yourChoice);
+
     
-    //Request or prompt for choice and save in a variable = yourChoice;
 
-    let yourChoice = prompt('Rock, Paper, Scissors. Whats your choice?').toLowerCase();
+    
+    /*/Generate your choice and save in a variable = yourChoice;
+    function yourChoices(){
+    document.addEventListener('click', (e) => {
+    // Retrieve id from clicked element 
+    return e.target.id;
+    
+    console.log(yourChoice);
+    });
+    
+    }
+    yourChoices();
+    console.log(yourChoice);*/
+
+
+
+/*/Function rockPaperScissors
+function rockPaperScissors(){
 
     //Loop untill input is valid
-
-    while (yourChoice != 'rock' 
+    if (yourChoice != 'rock' 
         && yourChoice != 'paper' 
         && yourChoice != 'scissors' ){
-            alert ('Please Input a correct choice');
-            yourChoice = prompt('rock, paper, scissors. Whats your choice?').toLowerCase();
-
-};
+            console.log('invalid');
+            return;
+        };
 
 
     if (yourChoice === pcChoice){
@@ -41,8 +62,7 @@ function rockPaperScisso(){
     }
     
 
-    //if your choice is wins
-
+    //if your choice wins
     else if (yourChoice === 'rock' && pcChoice === 'scissors' ||
             yourChoice === 'paper' && pcChoice === 'rock' ||
             yourChoice === 'scissors' && pcChoice === 'paper')
@@ -54,8 +74,7 @@ function rockPaperScisso(){
                     return scoreboard;
             }
 
-    ////if your choice is loses
-
+    ////if your choice loses
     else if (yourChoice === 'rock' && pcChoice === 'paper' ||
                 yourChoice === 'paper' && pcChoice === 'scissors' ||
                 yourChoice === 'scissors' && pcChoice === 'rock'){
@@ -67,9 +86,9 @@ function rockPaperScisso(){
                         return scoreboard;
                 } 
             
- 
 
-    }
+
+}
 
     function gameOver() {
         if (yourScore > pcScore) {
@@ -78,7 +97,7 @@ function rockPaperScisso(){
             console.log("Game Over! You Lost! :(");
         }
     }
-    
+
     function startRockPaperScissors() {
         console.log(rockPaperScissors());
         if(yourScore < 5 && pcScore < 5){
@@ -91,7 +110,4 @@ function rockPaperScisso(){
     
     
     startRockPaperScissors();
-
-//call Function rockPaperScissors();
-
-// add function to add scores
+    */
