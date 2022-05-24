@@ -1,0 +1,75 @@
+/* Rock Paper Scissors Code
+
+Generate computers choice by random from array of [rock, paper, scissors] = pcChoice;
+
+Request or prompt for choice and save in a variable = yourChoice;
+
+Function rockPaperScissors(rock, paper, scissors) {
+    I need three variables thus rock, paper and scissors
+    rock > scissors;
+    paper > rock;
+    scissors > paper;
+
+    //If your choice is greater than computers choice you win.
+    if (yourchoice > pcChoice){
+        console.log('' You Won! ' + yourChoice + ' beats ' + pcChoice');
+    }
+
+    //If computers choice is greater than yours, you lose.
+    else if (pcChoice > yourChoice){
+        console.log(' You Lose! ' + pcChoice + ' beats ' + yourChoice);
+    }
+
+    //If choices are equal, it is a tie.
+    else (){
+        console.log('it's a tie');
+    }
+}
+
+rps();
+
+
+//Model 2
+
+Generate computers choice by random from array of [rock, paper, scissors] = pcChoice;
+
+Request or prompt for choice and save in a variable = yourChoice;
+
+Function rockPaperScissors();
+
+Function rockPaperScissors(rock, paper, scissors){
+    if (yourchoice === rock, pcChoice === scissors){
+        console.log('' You Won! ' + yourChoice + ' beats ' + pcChoice');
+    }
+
+    else if (yourchoice === rock, pcChoice === paper){
+        console.log(' You Lose! ' + pcChoice + ' beats ' + yourChoice);
+    }
+
+    else if (yourchoice === paper, pcChoice === rock){
+        console.log('' You Won! ' + yourChoice + ' beats ' + pcChoice');
+    }
+
+    else if (yourchoice === paper, pcChoice === scissors){
+        console.log(' You Lose! ' + pcChoice + ' beats ' + yourChoice);
+    }
+    
+    else if (yourchoice === scissors, pcChoice === paper){
+        console.log('' You Won! ' + yourChoice + ' beats ' + pcChoice');
+    }
+
+     else if (yourchoice === scissors, pcChoice === rock){
+        console.log(' You Lose! ' + pcChoice + ' beats ' + yourChoice);
+    }
+
+    else {
+        console.log('it's a tie');
+    }
+
+}
+
+
+*/
+
+
+console.log('it\'s a jnjjssAAAs,');
