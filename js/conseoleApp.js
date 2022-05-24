@@ -13,9 +13,6 @@ const pcPoint = document.querySelector('#pc-point');
 let yourScore = 0; 
 let pcScore = 0;
 
-//Game round
-let gameRound = 0;
-
 //Generate computers choice by random from array of [rock, paper, scissors] = pcChoice;
 function pcChoices(){
     const choiceArray = ['rock', 'paper', 'scissors'];
@@ -27,7 +24,7 @@ function pcChoices(){
 
 //End game function
 function endGame(){
-        if (gameRound === 5) {
+        if (yourScore === 5 || pcScore === 5) {
             if (yourScore > pcScore) {
             alert("You Win! Let's Party! :)");
             } else if (pcScore > yourScore) {
@@ -72,7 +69,6 @@ function rockPaperScissors(yourChoice, pcChoice){
     if (yourScore < 5 && pcScore < 5 ) {
     if (yourChoice === pcChoice){
         yourScore += 0;
-        gameRound ++;
         scoreMessage = 'It\'s a tie';
         scoreMessages(scoreMessage);       
         //console.log(scoreMessage);
@@ -91,7 +87,6 @@ function rockPaperScissors(yourChoice, pcChoice){
              yourChoice === 'scissors' && pcChoice === 'paper') {   
                 pcScore.textContent = `${yourScore} += 0`;
                 yourScore++;
-                gameRound ++;
                 scoreMessage = `You Won! ${yourChoice} beats ${pcChoice}`;
                 scoreMessages(scoreMessage); 
                 //console.log(youWin);
@@ -106,7 +101,6 @@ function rockPaperScissors(yourChoice, pcChoice){
              yourChoice === 'paper' && pcChoice === 'scissors' ||
              yourChoice === 'scissors' && pcChoice === 'rock') {
                     pcScore++;
-                    gameRound ++;
                     scoreMessage = `You Lose! ${pcChoice} beats ${yourChoice}`;
                     scoreMessages(scoreMessage); 
                     //youLose = `You Lose! ${pcChoice} beats ${yourChoice}`;
