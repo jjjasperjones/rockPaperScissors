@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--script src="js.js"></script-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="custom-style.css">
@@ -18,6 +19,7 @@
 
     <div class="container">
         <div class="scoreboard">
+            <p id="score-board-msg"></p>
             <h2 id="sb-header"> Current Score</h2>
             <div class="scores">
                 <div class="your-score p-scores">
@@ -33,15 +35,15 @@
     </div>
 
     <div class="container">
-        <div class="play-choices rock-paper-scissors">
-            <img src="/images/rock_solid.svg" alt="rock" id="rock" class="play-choice">
-            <img src="/images/paper_solid.svg" alt="paper" id="paper" class="play-choice">
-            <img src="/images/scissors_solid.svg" alt="scissors" id="scissors" class="play-choice">
+        <div class="play-choices rock-paper-scissors" id="choices">
+            <img src="/images/rock_solid.svg" alt="rock" data-id="rock" id="rock" class="play-choice">
+            <img src="/images/paper_solid.svg" alt="paper" data-id="paper" id="paper" class="play-choice">
+            <img src="/images/scissors_solid.svg" alt="scissors" data-id="scissors" id="scissors" class="play-choice">
         </div>
     </div>
     
     <div class="container ">
-        <div class=" restart-game"> 
+        <div class="restart-game"> 
             <button class="custom-btn btn-12"><span>Restart!</span><span>Try Again</span></button>
         </div>
     </div>
