@@ -19,7 +19,8 @@ body {
     color: rgb(255, 255, 255);
     height: 100%;
     background-image: url(images/RPS_BG.png);
-	background-size: cover;
+    background-size: cover;
+    background-color: black;
 }
 
 .container h1, .container h2, .container p, #my-point, #your-score, #header, #pc-point, #pc-score, #sb-header {
